@@ -57,7 +57,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="cta-btn" href="#about">Get Started</a>
+      <a class="cta-btn" href="#about">Login</a>
 
     </div>
   </header>
