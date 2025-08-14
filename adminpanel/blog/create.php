@@ -1,5 +1,37 @@
 <?php 
+    require '../connect.php';
     require '../requires/header.php';
+
+
+    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+
+        $title = $_POST['title'];
+        $image = $_FILES['image'];
+        $blog_type = $_POST['blog_type'];
+        $description = $_POST['description'];
+
+
+        // Faylni yuklash jarayoni 
+        $imagePath = 'uploads/'.basename(rand().$image['name']);
+
+        if(move_uploaded_file($image['tmp_name'],$imagePath)){
+
+            $statement = $pdo->prepare("INSERT INTO blogs(title,image,blog_type,description) VALUES (:title,:image,:blog_type,:description)");
+            $statement->execute([
+
+                'title' => $_POST['title'],
+                'image' => $imagePath,
+                'blog_type' => $_POST['blog_type'],
+                'description' => $_POST['description']
+            ]);
+            
+            $_SESSION['blog-created'] = 'Blog created successfully';
+            header('location: index.php');
+        }
+
+       
+
+    }
 ?>
                 <div class="col-md-12">
                     <h1 class="page-head-line">CREATE BLOG PAGE</h1>
@@ -11,7 +43,7 @@
                                                 <a href="index.php" class="btn" style="background-color: black; color: white;">Back</a>
                                             </div>
                                             <div class="panel-body">
-                                                <form role="form" method="POST">
+                                                <form role="form" method="POST" enctype="multipart/form-data">
 
                                                             <div class="form-group">
                                                                 <label>Title</label>
@@ -21,6 +53,7 @@
                                                                 <label>Image</label>
                                                                 <input class="form-control" type="file" name="image">
                                                             </div>
+                                                          
                                                             <div class="form-group">
                                                                 <label>Blog type</label>
                                                                 <input class="form-control" type="text" name="blog_type">
