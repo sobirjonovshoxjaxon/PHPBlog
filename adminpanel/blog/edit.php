@@ -18,15 +18,39 @@
         $blog_type = $_POST['blog_type'];
         $description = $_POST['description'];
 
-        $statement = $pdo->prepare("UPDATE blogs SET VALUES title = :title, image = :image, blog_type = :blog_type, description = :description WHERE id = :id");
-        $statement->execute([
+        //Fileni olamiz
+        $statement = $pdo->prepare("SELECT image FROM blogs WHERE id = ?");
+        $statement->execute([$id]);
+        $oldImage = $statement->fetch();
 
+        if($oldImage){
 
-        ]);
+            if(file_exists($oldImage['image'])){
+                unlink($oldImage['image']);
+            }
+        }
 
+        if(isset($image)){
 
-        $_SESSION['blog-updated'] = 'Blog updated successfully';
-        header('location: index.php');
+            $imagePath = 'uploads/'.basename(rand().$image['name']);
+
+            if(move_uploaded_file($image['tmp_name'],$imagePath)){
+
+                $statement = $pdo->prepare("UPDATE blogs SET title = :title, image = :image, blog_type = :blog_type, description = :description WHERE id = :id");
+                $statement->execute([
+
+                    'id'=>$id,
+                    'title'=>$title,
+                    'image'=>$imagePath,
+                    'blog_type'=>$blog_type,
+                    'description'=>$description
+                ]);
+
+                $_SESSION['blog-updated'] = 'Blog updated successfully';
+                header('location: index.php');
+
+            }
+        }
     }
 ?>
                 <div class="col-md-12">
@@ -64,7 +88,7 @@
                                                     
                                                     
                                                             <button type="submit" class="btn btn-warning">Edit</button>
-                                                            <button type="reset" class="btn btn-warning">Reset</button>
+                                                            <button type="reset" class="btn btn-primary">Reset</button>
 
                                                         </form>
                                                 </div>

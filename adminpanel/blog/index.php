@@ -8,6 +8,35 @@
     $blogs = $statement->fetchAll();
 
 
+    //Delete Code 
+    if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['DELETE'])){
+
+        $id = $_POST['blog_id'];
+
+        $statement = $pdo->prepare("SELECT image FROM blogs WHERE id = ?");
+        $statement->execute([$id]);
+        $post = $statement->fetch();
+
+        if($post){
+
+            $image = $post['image'];
+
+            if(file_exists($image)){
+                unlink($image);
+            }
+
+            $statement = $pdo->prepare("DELETE FROM blogs WHERE id = ?");
+            $statement->execute([$id]);
+
+
+            $_SESSION['blog-deleted'] = 'Blog deleted successfully';
+          
+        }
+
+        header('location index.php');
+    }
+
+
 ?>          
                 
                 <div class="col-md-12">
