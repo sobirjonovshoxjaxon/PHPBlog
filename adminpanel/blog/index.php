@@ -19,6 +19,22 @@
                         </div>
                         <?php unset($_SESSION['blog-created']); ?>
                     <?php endif; ?>
+
+
+                    <?php if(isset($_SESSION['blog-updated'])): ?>
+                        <div class="alert alert-warning">
+                            <?= $_SESSION['blog-updated']; ?>
+                            <?php unset($_SESSION['blog-updated']); ?>
+                        </div>
+                    <?php endif; ?>
+
+
+                    <?php if(isset($_SESSION['blog-deleted'])): ?>
+                        <div class="alert alert-danger">
+                            <?= $_SESSION['blog-deleted']; ?>
+                            <?php unset($_SESSION['blog-deleted']); ?>
+                        </div>
+                    <?php endif; ?>
                 </div>
                 <div class="col-md-12 col-sm-12 col-lg-12">
                   <!--   Kitchen Sink -->
@@ -58,10 +74,16 @@
                                                 <a href="show.php?id=<?= $blog['id']; ?>" class="btn btn-primary">Show</a>
                                             </td>
                                             <td>
-                                                <a href="" class="btn btn-warning">Edit</a>
+                                                <a href="edit.php?id=<?= $blog['id']; ?>" class="btn btn-warning">Edit</a>
                                             </td>
                                             <td>
-                                                <a href="" class="btn btn-danger">Delete</a>
+                                                <form action="" method="POST">
+
+                                                    <input type="hidden" name="DELETE">
+                                                    <input type="hidden" name="blog_id" value="<?= $blog['id']; ?>">
+
+                                                    <input type="submit" value="Delete" class="btn btn-danger">
+                                                </form>
                                             </td>
                                         </tr>
                                     <?php endforeach; ?>
