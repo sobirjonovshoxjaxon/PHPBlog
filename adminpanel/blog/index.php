@@ -1,4 +1,5 @@
 <?php
+    $logout = '../logout.php';  
     $blog = 'index.php';
     require '../requires/header.php';
     require '../connect.php';

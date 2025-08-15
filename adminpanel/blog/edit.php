@@ -1,4 +1,5 @@
-<?php 
+<?php
+    $logout = '../logout.php';
     require '../connect.php';
     require '../requires/header.php';
 

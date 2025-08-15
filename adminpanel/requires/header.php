@@ -37,7 +37,7 @@
             </div>
 
             <div class="header-right">
-                <a href="login.html" class="btn btn-danger" title="Logout"><i class="fa fa-exclamation-circle fa-2x"></i></a>
+                <a href="<?= $logout ?>" class="btn btn-danger" title="Logout"><i class="fa fa-exclamation-circle fa-2x"></i></a>
             </div>
         </nav>
         <!-- /. NAV TOP  -->

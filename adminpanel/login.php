@@ -1,3 +1,38 @@
+<?php 
+
+    require 'connect.php';
+
+
+    if(isset($_POST['name']) && $_POST['password']){
+
+        $name = $_POST['name'];
+        $password = $_POST['password'];
+
+        $statement = $pdo->prepare("SELECT * FROM users WHERE name = :name AND password = :password");
+        $statement->execute([
+
+            'name' => $_POST['name'],
+            'password' => $_POST['password'],
+        ]);
+
+        $user = $statement->fetch();
+
+        if($user){
+
+            header('location: index.php');
+            exit;
+        }else{
+
+            header('location: login.php');
+            exit;
+        }
+
+      
+    }
+
+
+?>
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -25,24 +60,20 @@
                 <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
                            
                             <div class="panel-body">
-                                <form role="form">
+                                <form role="form" method="POST">
                                      
                                         <div class="form-group input-group">
                                             <span class="input-group-addon"><i class="fa fa-tag"  ></i></span>
-                                            <input type="text" class="form-control" placeholder="Your Username " />
+                                            <input type="text" class="form-control" placeholder="Your Username " name="name" />
                                         </div>
-                                                                              <div class="form-group input-group">
+
+                                        <div class="form-group input-group">
                                             <span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
-                                            <input type="password" class="form-control"  placeholder="Your Password" />
+                                            <input type="password" class="form-control"  placeholder="Your Password" name="password"/>
                                         </div>
-                                    <div class="form-group">
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox" /> Remember me
-                                            </label>
-                                          
-                                        </div>
+                                        
                                      
-                                     <a href="index.html" class="btn btn-primary ">Login Now</a>
+                                        <button type="submit" class="btn btn-primary">Login</button>
                                   
                                     </form>
                             </div>
