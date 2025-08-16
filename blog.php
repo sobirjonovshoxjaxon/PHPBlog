@@ -39,9 +39,7 @@
               </h2>
 
               <div class="d-flex align-items-center">
-                <img src="assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
                 <div class="post-meta">
-                  <p class="post-author">Maria Doe</p>
                   <p class="post-date">
                     <time datetime="2022-01-01"><?= date('M d, Y', strtotime($blog['updated_at'])); ?></time>
                   </p>

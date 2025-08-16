@@ -1,5 +1,5 @@
 <?php
-
+    ob_start();
     session_start();
 
 ?>
@@ -15,13 +15,15 @@
     <!-- BOOTSTRAP STYLES-->
     <link href="/admin/css/bootstrap.min.css" rel="stylesheet" />
     <!-- FONTAWESOME STYLES-->
-    <link href="/admin/css/font-awesome.css" rel="stylesheet" />
+
+    <link href="/admin/css/font-awesome.min.css" rel="stylesheet" />
        <!--CUSTOM BASIC STYLES-->
     <link href="/admin/css/basic.min.css" rel="stylesheet" />
     <!--CUSTOM MAIN STYLES-->
     <link href="/admin/css/custom.min.css" rel="stylesheet" />
     <!-- GOOGLE FONTS-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
 </head>
 <body>
     <div id="wrapper">

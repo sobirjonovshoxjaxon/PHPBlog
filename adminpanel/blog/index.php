@@ -32,9 +32,15 @@
 
             $_SESSION['blog-deleted'] = 'Blog deleted successfully';
           
+        }else{
+
+            $_SESSION['blog-deleted'] = 'Blog not found';
         }
 
-        header('location index.php');
+        header('location: index.php');
+        exit;
+
+        ob_end_flush();
     }
 
 
@@ -96,7 +102,7 @@
                                             <td>
                                                 <img width="100px" src="<?= $blog['image']; ?>" alt="">
                                             </td>
-                                            <td><?= $blog['description']; ?></td>
+                                            <td><?= substr($blog['description'],0,50) . "..."; ?></td>
                                             <td><?= $blog['blog_type']; ?></td>
                                             <td><?= $blog['created_at']; ?></td>
                                             <td><?= $blog['updated_at']; ?></td>
