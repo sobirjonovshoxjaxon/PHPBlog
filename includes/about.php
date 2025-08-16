@@ -3,8 +3,7 @@
 
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-            <h2>About</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            <h2>PHP Haqida</h2>
         </div><!-- End Section Title -->
 
         <div class="container">
@@ -13,19 +12,34 @@
 
             <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
+                    <b>Tarixi</b><br>
                 </p>
                 <ul>
-                <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo</span></li>
+                <li><i class="bi bi-check2-circle"></i> <span>1994-yil: PHP dastlab Rasmus Lerdorf tomonidan yaratilgan.</span></li>
+                <li><i class="bi bi-check2-circle"></i> <span>1995-yil: PHP / FI (Forms Interpreter) sifatida ommaga e'lon qilindi.</span></li>
+                <li>
+                    <i class="bi bi-check2-circle"></i> <span>1997-yil: PHP 3 versiyasi chiqarildi - mashhurlik oshirildi.</span>
+                </li>
+                <li>
+                    <i class="bi bi-check2-circle"></i> <span>2000-yil: PHP 4 - Zend Engine asosida</span>
+                </li>
+                <li>
+                    <i class="bi bi-check2-circle"></i> <span>2004-yil: PHP 5 - OOP imkoniyatlari bilan (Object Oriented Programming).</span>
+                </li>
+                <li>
+                    <i class="bi bi-check2-circle"></i> <span>2015-yil: PHP 7 - Tezlik samaradorlikda katta o'sish.</span>
+                </li>
+                <li>
+                    <i class="bi bi-check2-circle"></i> <span>2020-yil: PHP 8 - JIT (Just-in-time-compilation) yangi sintaksis xususiyatlari.</span>
+                </li>
                 </ul>
             </div>
 
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                <p>PHP (Hypertext Preprossor) bu server tomonidan ishlaydigan, ochiq manbali (open-source) interpretor dasturlash tilidir. Asosan veb-ilovalar va dinamik veb-sahifalalar yaratish uchun ishlatiladi.
+                Facebook - boshlanishida PHP da yozilgan.
+                </p>
+               
             </div>
 
             </div>

@@ -1,7 +1,7 @@
 <?php 
 
-    $title = 'Blog Detail - KnightOne';
-    $pageTitle = 'Blog Detail';
+    $title = 'Blog Detail - PHP Blog';
+    $pageTitle = 'Blog Ichki Sahifasi';
 
     require 'connect.php';
     require 'includes/header.php';

@@ -1,7 +1,7 @@
 <?php 
 
-    $title = 'About - KnightOne';
-    $pageTitle = 'About';
+    $title = 'Biz Haqimizda - PHP Blog';
+    $pageTitle = 'Biz Haqimizda';
 
     require 'includes/header.php';
     require 'includes/pageTitle.php';

@@ -9,7 +9,7 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/php.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -49,9 +49,8 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.php" class="active">Home</a></li>
-          <li><a href="about.php">About</a></li>
-          <li><a href="pricing.php">Pricing</a></li>
+          <li><a href="index.php" class="active">Bosh Sahifa</a></li>
+          <li><a href="about.php">Biz haqimizda</a></li>
           <li><a href="blog.php">Blog</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>

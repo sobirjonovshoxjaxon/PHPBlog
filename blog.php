@@ -1,6 +1,6 @@
 <?php 
 
-    $title = 'Blog - KnightOne';
+    $title = 'Blog - PHP Blog';
     $pageTitle = 'Blog';
 
     require 'connect.php';
