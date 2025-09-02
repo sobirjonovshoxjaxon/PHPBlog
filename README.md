@@ -1,1 +1,2 @@
-Sobirjonov Shoxjaxon
+# PHP-Blog
+Men bu php blog saytida phpni qo'limdan kelguncha yoritib berganman. Ya'ni php tarixi,rivojlanishi,o'ziga xos xususiyatlari, kim tomonidan yaratilingani va Facebook boshlanishida phpda yozilgani so'ngra necha yildan beri oramizdaligi, mashhur frameworklari va Eng asosiysi internetdagi necha % foiz saytlar phpda ishlayotgani haqida yozib ma'lumotlarni joylaganman. Blog qismi phpga oid bloglar chiqib turadi.
