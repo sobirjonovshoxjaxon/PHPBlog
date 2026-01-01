@@ -100,7 +100,7 @@
                                             <td><?= $blog['id']; ?></td>
                                             <td><?= $blog['title']; ?></td>
                                             <td>
-                                                <img width="100px" src="<?= $blog['image']; ?>" alt="">
+                                                <img width="300" src="<?= $blog['image']; ?>" alt="">
                                             </td>
                                             <td><?= substr($blog['description'],0,50) . "..."; ?></td>
                                             <td><?= $blog['blog_type']; ?></td>
