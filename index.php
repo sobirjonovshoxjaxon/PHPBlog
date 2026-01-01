@@ -29,97 +29,98 @@
     <!-- /About Section -->
 
     <!-- Services Section -->
-    <section id="services" class="services section">
+      <section id="services" class="services section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>PHP qanday xizmatlar ko'rsata oladi</h2>
-      </div><!-- End Section Title -->
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>PHP qanday xizmatlar ko'rsata oladi</h2>
+        </div><!-- End Section Title -->
 
-      <div class="container">
+        <div class="container">
 
-        <div class="row gy-4">
+          <div class="row gy-4">
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
-              <div class="icon">
-                <i class="bi bi-activity"></i>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item  position-relative">
+                <div class="icon">
+                  <i class="bi bi-activity"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Dynamic Website Development</h3>
+                </a>
+                <p>PHP yordamida foydalanuvchi bilan o‘zaro ishlaydigan dinamik veb-saytlar yaratish.</p>
               </div>
-              <a href="#" class="stretched-link">
-                <h3>Dynamic Website Development</h3>
-              </a>
-              <p>PHP yordamida foydalanuvchi bilan o‘zaro ishlaydigan dinamik veb-saytlar yaratish.</p>
-            </div>
-          </div><!-- End Service Item -->
+            </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-broadcast"></i>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-broadcast"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Custom CMS Development</h3>
+                </a>
+                <p>O‘ziga xos kontent boshqaruv tizimlari (CMS) tuzish.</p>
               </div>
-              <a href="#" class="stretched-link">
-                <h3>Custom CMS Development</h3>
-              </a>
-              <p>O‘ziga xos kontent boshqaruv tizimlari (CMS) tuzish.</p>
-            </div>
-          </div><!-- End Service Item -->
+            </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-easel"></i>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-easel"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Blog & News Portal Creation</h3>
+                </a>
+                <p>Yangiliklar va blog platformalarini ishlab chiqish.</p>
               </div>
-              <a href="#" class="stretched-link">
-                <h3>Blog & News Portal Creation</h3>
-              </a>
-              <p>Yangiliklar va blog platformalarini ishlab chiqish.</p>
-            </div>
-          </div><!-- End Service Item -->
+            </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-bounding-box-circles"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>API Development & Integration</h3>
+                </a>
+                <p>Backend API lar yaratish va ularga ulanish.</p>
+                <a href="#" class="stretched-link"></a>
               </div>
-              <a href="#" class="stretched-link">
-                <h3>API Development & Integration</h3>
-              </a>
-              <p>Backend API lar yaratish va ularga ulanish.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
+            </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-calendar4-week"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Web Security Implementation</h3>
+                </a>
+                <p>PHP asosida xavfsizlik choralari (login, ma’lumotlarni himoya qilish).</p>
+                <a href="#" class="stretched-link"></a>
               </div>
-              <a href="#" class="stretched-link">
-                <h3>Web Security Implementation</h3>
-              </a>
-              <p>PHP asosida xavfsizlik choralari (login, ma’lumotlarni himoya qilish).</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
+            </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-chat-square-text"></i>
+                </div>
+                <a href="#" class="stretched-link">
+                  <h3>Database Integration</h3>
+                </a>
+                <p>MySQL yoki boshqa ma’lumotlar bazalari bilan integratsiya qilish.</p>
+                <a href="#" class="stretched-link"></a>
               </div>
-              <a href="#" class="stretched-link">
-                <h3>Database Integration</h3>
-              </a>
-              <p>MySQL yoki boshqa ma’lumotlar bazalari bilan integratsiya qilish.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
+            </div><!-- End Service Item -->
+
+          </div>
 
         </div>
 
-      </div>
-
-    </section><!-- /Services Section -->
+      </section>
+    <!-- /Services Section -->
 
     <!-- Stats Section -->
       <section id="stats" class="stats section dark-background">
